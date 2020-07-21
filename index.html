@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"  crossorigin="anonymous">
     <!-- Fontawsome cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- maginific popup -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/magnific-popup.css">    
+   
+    <!-- owl-carosal csss -->
+    <link rel="stylesheet" href="./vendor/owl-carosel/css/owl.carousel.css">
+    <link rel="stylesheet" href="./vendor/owl-carosel/css/owl.theme.default.min.css">
     <!--Own Css file-->
     <link rel="stylesheet" href='./css/style.css'>
     <!--  Responsive css file  -->
@@ -296,17 +303,20 @@
             <h1 class="text-uppercase title-h1">Quality work</h1>
         </div>
         <div class="button-group">
-            <button class="active" type="button">All</button>
-            <button  type="button">Popular</button>
-            <button  type="button">Latest</button>
+            <button class="active" type="button" id="btn1">All</button>
+            <button  type="button"data-filter='.popular'>Popular</button>
+            <button  type="button" data-filter='.latest'>Latest</button>
             <button  type="button">Following</button>
             <button  type="button">Upcoming</button>
         </div>
         <div class="row grid">
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
                 <div class="our-project">
                     <div class="img">
-                        <img src="./img/portfolio/p1.jpg" alt="portfolio1">
+                        <a class="test-popup-link" href="./img/portfolio/p1.jpg">
+                            <img src="./img/portfolio/p1.jpg" alt="portfolio1">
+                        </a>
+
                     </div>
                     <div class="title py-4">
                         <h4 class="text-uppercase">Minimal Design</h4>
@@ -317,7 +327,9 @@
             <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
                 <div class="our-project">
                     <div class="img">
-                        <img src="./img/portfolio/p2.jpg" alt="portfolio1">
+                        <a class="test-popup-link" href="./img/portfolio/p3.jpg">
+                            <img src="./img/portfolio/p3.jpg" alt="portfolio1">
+                        </a>
                     </div>
                     <div class="title py-4">
                         <h4 class="text-uppercase">Minimal Design</h4>
@@ -325,10 +337,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
                 <div class="our-project">
                     <div class="img">
-                        <img src="./img/portfolio/p3.jpg" alt="portfolio1">
+                        <a class="test-popup-link" href="./img/portfolio/p2.jpg">
+                            <img src="./img/portfolio/p2.jpg" alt="portfolio1">
+                        </a>
                     </div>
                     <div class="title py-4">
                         <h4 class="text-uppercase">Minimal Design</h4>
@@ -340,6 +354,110 @@
     </div>
 </section>
 <!-- End project area -->
+<!-- start aboutMe Area -->
+<section class="about-area">
+    <div class="container">
+        <row class="text-center">
+            <div class="col-12">
+                <div class="about-title">
+                    <h1 class="text-uppercase title-h1">Client says about me</h1>
+                        <p class="para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, odio provident debitis voluptas ipsum possimus unde architecto corporis voluptatum dolores.
+                        </p>
+                    
+                </div>
+            </div>
+        </row>
+    </div>
+    <div class="container carousel py-lg-5">
+        <div class="owl-carousel owl-theme">
+            <div class="client row">
+                <div class="col-lg-4 col-md-12 client-img">
+                    <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                </div>
+                <div class="col-lg-8 col-md-12 about-client">
+                    <h4 class="text-uppercase">ABC</h4>
+                    <p class="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, accusantium?
+                    </p>
+                </div>
+            </div>
+            <div class="client row">
+                <div class="col-lg-4 col-md-12 client-img">
+                    <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                </div>
+                <div class="col-lg-8 col-md-12 about-client">
+                    <h4 class="text-uppercase">ABC</h4>
+                    <p class="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, accusantium?
+                    </p>
+                </div>
+            </div>
+            <div class="client row">
+                <div class="col-lg-4 col-md-12 client-img">
+                    <img src="./img/testimonials/t2.jpg" alt="img1" class="img-fluid">
+                </div>
+                <div class="col-lg-8 col-md-12 about-client">
+                    <h4 class="text-uppercase">xyz</h4>
+                    <p class="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, accusantium?
+                    </p>
+                </div>
+            </div>
+            <div class="client row">
+                <div class="col-lg-4 col-md-12 client-img">
+                    <img src="./img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                </div>
+                <div class="col-lg-8 col-md-12 about-client">
+                    <h4 class="text-uppercase">ABC</h4>
+                    <p class="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, accusantium?
+                    </p>
+                </div>
+            </div>
+            <div class="client row">
+                <div class="col-lg-4 col-md-12 client-img">
+                    <img src="./img/testimonials/t2.jpg" alt="img1" class="img-fluid">
+                </div>
+                <div class="col-lg-8 col-md-12 about-client">
+                    <h4 class="text-uppercase">xyz</h4>
+                    <p class="para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, accusantium?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end aboutme area -->
+
+<!-- subscribe me area -->
+<section class="subscribe-us-area">
+    <div class="container subscribe">
+        <div class="row">
+            <div class="col-lg-12 text-center subscribe-title">
+                <h4 class="text-uppercase">Get Update From anywhere</h4>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                    consequuntur.</p>
+            </div>
+        </div>
+        <div class="d-sm-flex justify-content-center">
+            <form class="w-50">
+                <div class="row d-flex flex-row flex-wrap">
+                    <div class="col input-textbox">
+                        <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col">
+                        <div class="btn-submit">
+                            <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- end subscribe me area -->
 </main>
 <!-- end main area -->
     
@@ -348,5 +466,16 @@
 
     <!--bootstrap js file-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Isotope js Library -->
+<script src="./vendor/isotope/isotope.min.js"></script>
+
+<!-- maginific js -->
+<script src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
+<!-- owl carosel js -->
+<script src="./vendor/owl-carosel/js/owl.carousel.min.js"></script>
+<!-- custom js file -->
+<script src="./js/main.js"></script>
+
 </body>
 </html>
