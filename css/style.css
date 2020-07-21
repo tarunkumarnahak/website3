@@ -11,7 +11,9 @@
 
 
 /* start navigation */ 
-
+html{
+    scroll-behavior: smooth;
+}
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
 }
@@ -174,3 +176,40 @@
 .site-main .brand-area .experience-area .call-area{
     padding-left: 10rem;
 }
+/* Services Area */
+.site-main .service-area{
+    padding: 7rem 2rem;
+}
+.site-main .service-area .service-title{
+    padding: 0 14rem;
+
+
+}
+.site-main .service-area .services-title h1{
+    font-size: 35px;
+}
+.site-main >.service-area .services{
+    background: rgba(248, 252, 253, .973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.site-main >.service-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* end Service area */
+
+/* start proect area */
+.site-main .project-area{
+    padding: 4rem 0;
+}
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+/* end project area */
